@@ -21,6 +21,9 @@ const users = [
 ];
 
 const siteConfig = {
+  // We need to keep the docs folder in the same folder
+  // as the package.json file for now
+  customDocsPath: path.basename(__dirname) + '/docs',
   title: 'Test Site', // Title for your website.
   tagline: 'A website for testing',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
